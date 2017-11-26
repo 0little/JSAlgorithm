@@ -21,3 +21,6 @@ Please complete a function, enter such a two-dimensional array and an integer, d
 
 ### twoStackToQueue
 Achieve a queue with two stacks, and then reslize the function of pop and push.The element in the queue is integer.
+
+### Fibonacci
+f(n) = f(n-1) + f(n-2)
