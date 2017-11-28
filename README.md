@@ -24,3 +24,6 @@ Achieve a queue with two stacks, and then reslize the function of pop and push.T
 
 ### Fibonacci
 f(n) = f(n-1) + f(n-2)
+
+### jumpFloor
+a frog can move one step or two step every time, question: if the frog wants to jump to n level, how many methods are there?
