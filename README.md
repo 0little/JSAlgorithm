@@ -30,3 +30,6 @@ a frog can move one step or two step every time, question: if the frog wants to 
 
 ### rectCover
 use n small rectangles which is 2 * 1 to cover a big rectangle which is 2 * n.
+
+### numberOf1or0
+Enter a number, and calculate the number of 0 or 1 in the relevant binary number.
