@@ -33,3 +33,6 @@ use n small rectangles which is 2 * 1 to cover a big rectangle which is 2 * n.
 
 ### numberOf1or0
 Enter a number, and calculate the number of 0 or 1 in the relevant binary number.
+
+### findKthToTail
+Enter a chain list and output the reciprocal K node in the list.
