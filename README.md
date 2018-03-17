@@ -36,3 +36,8 @@ Enter a number, and calculate the number of 0 or 1 in the relevant binary number
 
 ### findKthToTail
 Enter a chain list and output the reciprocal K node in the list.
+
+### 桶排序
+时间复杂度：O（M+N）
+M表示桶的个数，N表示数字的个数
+思想：要排序的数的范围是什么就准备几个桶，遍历这些数，把他们放在以他们为下标的桶里面，再遍历这些桶，就会得到有序的输出
