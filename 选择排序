@@ -1,0 +1,19 @@
+//从小到大排
+//选择排序
+    function select(array) {
+        var len  = array.length;
+        var tmp;
+
+        for(var i = 0; i < len-1; i++) {
+            for(var j = i; j < len-1; j++) {
+                if(array[i] > array[j+1]) {
+                    //找到了比该元素小的元素
+                    tmp = array[i];
+                    array[i] = array[j+1];
+                    array[j+1] = tmp;
+                }
+            }
+        }
+
+        return array;
+    }
