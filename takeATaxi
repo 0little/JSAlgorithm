@@ -1,0 +1,43 @@
+var row1 = readline().split(' ');
+var p = readline().split(' ');
+function cal(n, m, p) {
+    var tmp = p.map(function (data) {
+        return +data;
+    });
+    tmp = tmp.sort(function (a, b) {
+        return a - b;
+    });
+    var sum = 0;
+
+    for(var i = 0; i < n; i++) {
+        sum += tmp[i];
+        if(sum >= m) {
+            break;
+        }
+    }
+
+    var count = i + 1;
+
+    if(i == 0) {
+        return count;
+    }
+
+    if(sum == m) {
+        return count;
+    } else {
+        var d = sum - m;
+        for(var j = i-1; j >= 0; j--) {
+            if(d > tmp[j]) {
+                d -= tmp[j];
+                count--;
+            } else if(d == tmp[j]) {
+                count--;
+                break;
+            }
+        }
+    }
+
+    return count;
+}
+
+print(cal(row1[0], row1[1], p));
