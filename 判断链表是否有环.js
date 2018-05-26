@@ -1,3 +1,4 @@
+//方法一
 var hasCycle = function(head) {
 
 	if(head === null) {
@@ -22,3 +23,14 @@ var hasCycle = function(head) {
 
 	return false;
 }
+
+//方法二
+var hasCycle = function(head) {
+    if(head == null) return false;
+    while(head != null && !head.visited ){
+        head.visited = true;
+        head = head.next;
+    }
+    return head != null;
+};
+
