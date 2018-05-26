@@ -1,10 +1,17 @@
-function reverse(list){
-       var p=list.head,q=null;
-       while(p.next!==null){
-           q=p.next;
-           p.next=q.next;
-           q.next=list.head.next;
-           list.head.next=q;
-       }
-       return list;
-  }
+var reverseList = function(head) {
+	if(head == null) return null;
+	let headNode = null;
+	function headList(cur, parent) {
+		if(cur.next != null) {
+			const next = cur.next;
+			cur.next = parent;
+			headList(next, cur);
+		} else {
+			headNode = cur;
+			cur.next = parent;
+		}
+	}
+
+	headList(head, null);
+	return headNode;
+}
